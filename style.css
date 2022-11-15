@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: boder-box;
+}
+
+body * {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #343f4f;
+}
+
+.wrapper {
+  font-size: 0px;
+  cursor: pointer;
+  max-width: 1200px;
+}
+
+.wrapper .carousel {
+  white-space: nowrap;
+}
+
+.carousel img {
+  height: 340px;
+  margin-left: 15px;
+  object-fit: cover; /* não deixa a foto achatada*/
+  width: calc(100% / 3); /* deixa somente 3 imagens na tela */
+}
+
+.carousel img:first-child {
+  margin-left: 0px;
+}
